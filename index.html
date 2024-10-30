@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Render using the most standards-compliant mode available-->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Set the viewport to the device's width and scale accordingly-->
+        <title>Kim Richards</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mediaqueries.css">
+    </head>
+    <body>
+        <!--Navigation for deskptop version-->
+        <nav id="desktop-nav">
+            <div class="logo">Kim Richards</div>
+            <!--Navigation links-->
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</li>
+                    <li><a href="#experience">Experience</li>
+                    <li><a href="#projects">Projects</li>
+                    <li><a href="#contact">Contact</li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--Navigation for smaller screens-->
+        <nav id="hamburger-nav">
+            <div class="logo">Kim Richards</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</li>
+                </div>
+            </div>
+        </nav>
+
+        <section id="profile">
+            <div class="section__pic-container">
+                <img src="./assets/profile-pic.png" alt="Kim Richards Profile Picture">
+            </div>
+
+            <div class="section__text">
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class=title">Kim Richards</h1>
+                <p class="section__text__p2">Final Year Computer Science Student</p>
+                <div class="btn-container">
+                    <button 
+                        class="btn btn-color-2" 
+                        onclick="window.open('./assets/resume-example.pdf')">
+                        Download CV
+                    </button>
+                    <button 
+                    class="btn btn-color-1" 
+                    onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+                </div>
+                <div id="socials-container">
+                    <!--Open profile in new window when image clicked-->
+                    <img src="./assets/linkedin.png" 
+                        alt="My LinkedIn Profile"
+                        class="icon" 
+                        onclick="window.open('https://www.linkedin.com/in/kim-richards-138615293/', '_blank')"
+                    /> 
+                    <!--Open profile in new window when image clicked-->
+                    <img src="./assets/github.png" 
+                        alt="My GitHub Profile"
+                        class="icon" 
+                        onclick="window.open('https://github.com/Adbcb1b2/', '_blank')"
+                    /> 
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <p class="section__text__p1">Get To Know More</p>
+            <h1 class="title">About Me</h1>
+            <div class="section-container">
+                <div class="section__pic-container">
+                    <img src="./assets/about-pic.png"
+                     alt="Profile Picutre"
+                     class="about-pic"
+                     />
+                </div>
+                <div class="about-details-container">
+                    <div class="about-containers">
+
+                        <div class="details-container">
+                            <img src="./assets/education.png" 
+                            alt="Education Icon" 
+                            class="icon"
+                            />
+                            <h3>Education</h3>
+                            <p>BSc Computer Science with Foundation Year <br>(2021-Present)</p>
+                            <br>
+                            <p>A*ABB -  AS Levels </p>
+                            <br>
+                            <p>3A*s, 9As - GCSE</p>
+                        </div>
+                        <div class="details-container">
+                            <img src="./assets/experience.png" 
+                            alt="Experience Icon" 
+                            class="icon"
+                            />
+                            <h3>Work Experience</h3>
+                            <p>Lorem, ipsum.<br/>Lorem, ipsum dolor.</p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum 
+                            natus quas officiis numquam eum ex provident labore doloribus eos 
+                            obcaecati aut aperiam aliquid vitae optio fuga doloremque quasi 
+                            similique nulla, veniam suscipit eaque nobis. Molestias doloribus 
+                            soluta laboriosam nobis! Totam reprehenderit ipsa perspiciatis iure, 
+                            pariatur consequatur magni earum laborum qui.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" 
+            alt="Arrow icon" 
+            class="icon arrow" onclick="location.href='./experience'"\>
+        </section>
+
+        <section id="experience"></section>
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
