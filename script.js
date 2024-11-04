@@ -1,5 +1,7 @@
 // Open the burger menu when clicked
-function toggleMenu() {
+function toggleMenu(event) {
+
+    event.preventDefault(); // Prevent default action of the event
     // Get elements, assingn to variables
     const menu = document.querySelector(".menu-links");
     const icon = document.querySelector(".hamburger-icon");
