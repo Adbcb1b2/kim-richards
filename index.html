@@ -23,24 +23,24 @@
             </div>
         </nav>
 
-    <!-- Navigation for smaller screens -->
-    <nav id="hamburger-nav">
-        <div class="logo">Kim Richards</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu(event)">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+        <!-- Navigation for smaller screens -->
+        <nav id="hamburger-nav">
+            <div class="logo">Kim Richards</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu(event)">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
 
-            <ul class="menu-links"> <!-- Changed div to ul for better semantics -->
-                <li><a href="#about" onclick="toggleMenu(event)">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu(event)">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu(event)">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu(event)">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+                <ul class="menu-links"> 
+                    <li><a href="#about" onclick="closeMenu()">About</a></li>
+                    <li><a href="#experience" onclick="closeMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
 
         <!-- Main profile section-->
         <section id="profile">
