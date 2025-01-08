@@ -375,6 +375,7 @@ article {
 .project-btn {
     color: black;
     border-color: rgb(163, 163, 163);
+    margin-top: 1rem;
 }
 
 /*CONTACT SECTION */
@@ -427,3 +428,4 @@ footer{
 footer p {
     text-align: center;
 }
+
